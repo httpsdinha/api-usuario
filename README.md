@@ -1,34 +1,34 @@
-# API com Node.js, Prisma e MongoDB
+# 📡 API with Node.js, Prisma, and MongoDB
 
-## Pré Requisitos
+## ⚙️ Prerequisites
 
 - Node.js
 - MongoDB
 - Prisma CLI
 
-## Instalação
+## 🚀 Installation
 
-### Clone o repositório
+1. Clone the repository:
 ```
 git clone <url>
 ```
 
-### Instale as dependencias
+2. Install the dependencies:
 ```
 npm install
 ```
 
-## Configuração
+## ⚙️ Configuration
 
-### Crie um arquivo .env na raiz do projeto com as seguintes variáveis
+1. Create a `.env` file at the root of the project with the following variables:
 ```
 DATABASE_URL="mongodb+srv://<usuario>:<senha>@cluster.mongodb.net/<nome_do_banco>?retryWrites=true&w=majority"
 PORT=3000
 
-(substitua <usuairo>, <senha> e <nome_do_banco> pelos valores corretos do seu Banco MongoDB)
+(Replace <username>, <password>, and <database_name> with the correct values for your MongoDB database.)
 ```
 
-### Gere os artefatos Prisma
+2. Generate Prisma artifacts:
 ```
 npx prisma init
 ```
@@ -36,12 +36,12 @@ npx prisma init
 npx prisma db push
 ```
 
-### Abrir Prisma Studio
+3. Open Prisma Studio:
 ```
 npx prisma studio
 ```
 
-### Execute a Aplicação
+4. Run the Application
 ```
 node server.js
 ```
